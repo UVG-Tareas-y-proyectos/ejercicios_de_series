@@ -6,7 +6,7 @@ BASE = Path(__file__).resolve().parent.parent
 
 df = pd.read_csv(BASE / "data/raw/guatemala_temperatura.csv", parse_dates=["month"])
 
-# limpieza basica: orden cronologico, sin duplicados ni nulos
+# sin duplicados ni nulos
 df = df.sort_values("month").drop_duplicates(subset="month").dropna().reset_index(drop=True)
 
 # ultimos 36 meses para prueba
