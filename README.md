@@ -14,6 +14,6 @@ python -m venv venv
 ## Estructura
 
 - `notebooks/ejercicios.ipynb` - todos los ejercicios (1 al 8)
-- `data/raw/` - csv original, no se modifica
-- `data/processed/` - train/test y salidas generadas por el notebook (no se versiona)
-- `src/preparar_datos.py` - limpieza y separación train/test (genera lo de `data/processed/`)
+- `data/raw/` - csv original
+- `data/processed/` - train/test y salidas generadas por el notebook
+- `src/preparar_datos.py` - limpieza y separación train/test
